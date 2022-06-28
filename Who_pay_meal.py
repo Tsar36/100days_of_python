@@ -10,8 +10,8 @@ names = names_string.split(", ")
 '''
 The programm will randomly determine a person who will pay the bill :)
 '''
-# The first variant:
-# Get the total number of list:
+
+# Get the total number of list names:
 
 num_item = len(names)
 
@@ -19,6 +19,6 @@ num_item = len(names)
 
 random_choice = random.randint(0, num_item - 1)
 the_person_who_will_pay = names[random_choice]
-
-# the_person_who_will_pay = random.choice(names) # -- the advanced way using 'random.choice()'
 print(the_person_who_will_pay + " is going to buy the meal today")
+
+# the_person_who_will_pay = random.choice(names) # ------ the advanced way using 'choice()'
