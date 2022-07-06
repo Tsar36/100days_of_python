@@ -90,3 +90,24 @@ def greet(name, location):
   print(f"Hello {name}")
   print(f"your location is {location}")
 greet(name="Serhii", location="Lviv")
+
+# ---------------- Functions with Outputs -----------------------
+print("Functions with outputs")
+
+# def name(f_name, l_name):
+#   formated_f_name = f_name.title()
+#   formated_l_name = l_name.title()
+
+#   return f"{formated_f_name} {formated_l_name}"
+
+# print(name("sErHii", "TsaR"))
+
+def formated_name(f_name, l_name):
+  if f_name == "" or l_name == "":
+    return "You didn't provide any inputs"
+    
+  formated_f_name = f_name.title()
+  formated_l_name = l_name.title()
+  return f"{formated_f_name} {formated_l_name}"
+  
+print(formated_name(input("What is yor first name? "), input("What is your last name? ")))
